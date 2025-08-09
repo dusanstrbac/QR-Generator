@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Generiši QR kod za bilo koji tekst brzo i lako">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico"> <!-- Dodajemo ikonu za sajt (ako postoji) -->
+</head>
+
+<body>
+  <div class="container">
+    <h1>Generiši QR kod</h1>
+    <p>Unesite tekst u polje ispod i pritisnite dugme za generisanje QR koda.</p>
+    
+    <!-- Input polje za unos teksta -->
+    <input type="text" id="inputText" placeholder="Unesite tekst za QR kod" aria-label="Tekst za QR kod">
+
+    <!-- Dugme za generisanje QR koda -->
+    <button id="generateBtn" aria-label="Generiši QR kod">Generiši QR kod</button>
+    <button id="downloadBtn" style="display: none;">Preuzmi QR kod</button>
+
+    <!-- Mesto za prikaz QR koda -->
+    <div id="qrcode"></div>
+
+    <!-- Informacije o aplikaciji ili developeru (ako želiš) -->
+    <footer>
+      <p>QR Code Generator by <a href="https://web-seller-sigma.vercel.app/" target="_blank">Dušan Štrbac</a></p>
+    </footer>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+
+</html>
